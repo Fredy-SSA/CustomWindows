@@ -33,30 +33,37 @@
 
 ## Introduction to storage for Windows Server 2016 
 ### RAID 
+- http://www.freeraidrecovery.com/library/what-is-raid.aspx
 ### vSAN/iSCSI  
 ### Create  Storage Pools in Windows Server 2016
 - https://docs.microsoft.com/en-us/windows-server/storage/storage
 
 ## Introduction to High Availability 
 ### Install and configure Failover Clustering
+- https://docs.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview
 
 ### Hyper-V Manager 
-- https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/get-started-with-hyper-v-on-windows
 #### 	iSCSI  for Hyper-V
 #### Disaster recovery scenario for Hyper-V 
 #### High availability scenario for Hyper-V
+- https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/get-started-with-hyper-v-on-windows
 
 ### Install DNS server role 
 #### AD DNS vs DNS   
 #### Replicate DNS 
 - https://docs.microsoft.com/en-us/windows-server/networking/dns/dns-top
 
-### Install/Configure  File Server 
+## Install/Configure  File Server 
 #### Replicate File Servers
-#### Install/Configure Print Server 
+- https://docs.microsoft.com/en-us/windows-server/storage/dfs-namespaces/dfs-overview
+- https://docs.microsoft.com/en-us/windows-server/storage/dfs-replication/dfsr-overview
+- https://docs.microsoft.com/en-us/windows-server/storage/file-server/file-server-smb-overview
+  
+
+## Install/Configure Print Server 
+- https://newhelptech.wordpress.com/2017/07/20/step-by-step-how-to-install-configure-printer-pool-in-windows-server-2016/
 
 ## Best practices for troubleshooting
-
 #### Event viewer
 #### Resource Monitor
 #### Performance Monitor
