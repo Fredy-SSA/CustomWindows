@@ -2,12 +2,9 @@ Setup-Git
 https://github.com/Fredy-SSA/CustomWindows
 
 mkdir c:\CustomWindows
-
 cd c:\CustomWindows
 
 Users
 git init
 
 git clone https://github.com/Fredy-SSA/CustomWindows
-
-Alt User
