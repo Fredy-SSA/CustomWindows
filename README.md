@@ -1,6 +1,5 @@
 # Custom Windows
 ## Windows 2016  server Introduction
-- [Windows Server documentation](https://docs.microsoft.com/en-us/windows-server/)
 ### Overview 
 - [get-started/2016-edition-comparison](https://docs.microsoft.com/en-us/windows-server/)
 
@@ -65,6 +64,8 @@
 
 ## Best practices for troubleshooting
 #### Event viewer
+- https://www.404techsupport.com/2016/04/06/event-logs-windows-server-core/
 #### Resource Monitor
 #### Performance Monitor
+- https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/get-counter?view=powershell-7
 
