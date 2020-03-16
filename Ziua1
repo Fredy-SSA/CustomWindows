@@ -11,3 +11,5 @@ git commit -m "Upload" // commit your changes
 git remote add origin https://github.com/Fredy-SSA/CustomWindows // add remote repository URL which contains the required details
 git pull origin master // always pull from remote before pushing
 git push -u origin master // publish changes to your remote repository
+
+orice
