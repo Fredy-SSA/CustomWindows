@@ -56,24 +56,7 @@ Show-Command
 New-SmbShare -Name TestShare -Path C:\CustomWindows\test
 Get-SmbShare
 
-ipconfig 
-notepad 
 
-ise C:\CustomWindows\test.txt
-notepad C:\CustomWindows\test.txt
-code C:\CustomWindows\test.txt
-
-Invoke-Item C:\CustomWindows\test.txt
-ii C:\CustomWindows\test.txt
-
-help Invoke-Item  -ShowWindow
-
-Get-Alias -Definition Invoke-Item
-Get-Alias -Definition Get-ChildItem 
-
-gci
-ls
-dir
 
 
 

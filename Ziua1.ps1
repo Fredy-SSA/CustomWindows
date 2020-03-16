@@ -22,4 +22,30 @@ git clone https://github.com/Fredy-SSA/CustomWindows
 Get-Command 
 Get-Command | measure
 
+ipconfig 
+notepad 
+
+ise C:\CustomWindows\test.txt
+notepad C:\CustomWindows\test.txt
+code C:\CustomWindows\test.txt
+
+Invoke-Item C:\CustomWindows\test.txt
+ii C:\CustomWindows\test.txt
+
+help Invoke-Item  -ShowWindow
+
+Get-Alias -Definition Invoke-Item
+Get-Alias -Definition Get-ChildItem 
+
+gci
+ls
+dir
+
+Get-Module -ListAvailable  #FGHF
+
+Save-Help C:\CustomWindows\test -Force
+Update-Help -LiteralPath C:\CustomWindows\test -Force
+
+
+
 
