@@ -36,8 +36,8 @@ Test-Connection google.ro
 Test-Connection -ComputerName google.ro -Count 1
 
 Test-Connection localhost,::1,google.ro,atos.net -Protocol DCOM 
-
-
 Test-Connection -ComputerName ::1 -Count 1
 
 ping www.google.ro
+
+#
