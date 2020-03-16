@@ -54,8 +54,9 @@ Get-Service  | where status -eq "Stopped"
 Get-Service | ? name -like "a*" | ? status -Like "st*" # filtrare simpla
 Get-Service | ? {$_.name -like "a*" -and $_.status -Like "st*" } "Filtrare avansata"
 
-Get-Process | Get-Member
-Get-Process | select * -First 1
+
+Get-Process | Get-Member # obiectele
+Get-Process | select * -First 1 # toate proprietatile incarcate cu date
 
 (Get-Process notepad).Kill()
 
@@ -75,4 +76,11 @@ notepad C:\CustomWindows\test1.txt
 notepad C:\CustomWindows\test2.txt
 notepad C:\CustomWindows\test3.txt
 
+
+#pasi filtrare
+Get-Process | ? name -like notepad 
+Get-Process | ? name -like notepad | select *
+
+Get-Process | ? MainWindowTitle -eq "test2 - notepad"
+Get-Process | ? MainWindowTitle -like "test2*" | Stop-Process 
 
