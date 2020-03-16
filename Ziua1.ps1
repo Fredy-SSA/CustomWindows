@@ -97,3 +97,10 @@ ii C:\CustomWindows\test\test2csv.csv
 
 $csv = import-csv C:\CustomWindows\test\test2csv.csv
 $csv
+
+
+Get-Service  | select Status,Name,DisplayName,StartType | ? name -Like "a*" | export-csv C:\CustomWindows\test\test3csv.csv -NoTypeInformation 
+ii C:\CustomWindows\test\test3csv.csv
+
+$testOut_gridView = Get-Service  | select Status,Name,DisplayName,StartType | ? name -Like "a*" |Out-GridView -OutputMode Multiple
+$testOut_gridView 
