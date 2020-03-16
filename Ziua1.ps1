@@ -47,5 +47,19 @@ Save-Help C:\CustomWindows\test -Force
 Update-Help -LiteralPath C:\CustomWindows\test -Force
 
 
+Get-Service  
+Get-Service  | where status -like "sto*"
+Get-Service  | where status -eq "Stopped"
+
+Get-Service | ? name -like "a*" | ? status -Like "st*" # filtrare simpla
+Get-Service | ? {$_.name -like "a*" -and $_.status -Like "st*" } "Filtrare avansata"
+
+Get-Process | 
+ 
+Get-Alias ?
+
+
+
+
 
 
