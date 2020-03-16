@@ -22,10 +22,10 @@ Test-NetConnection -ComputerName "www.contoso.com" -InformationLevel "Detailed"
 Test-NetConnection -ComputerName "google.ro" -InformationLevel "Detailed"
 
 
-help Test-Connection -ShowWindow
+help Test-Connection -ShowWindow #full in pagina separata
 help Test-Connection -Examples  
 help Test-Connection -Full
-help Test-Connection -Online
+help Test-Connection -Online # iti deschide url-ul de la help
 
 Test-Connection "." 
 Test-Connection localhost
@@ -56,6 +56,15 @@ Show-Command
 New-SmbShare -Name TestShare -Path C:\CustomWindows\test
 Get-SmbShare
 
+ipconfig 
+notepad 
+
+ise C:\CustomWindows\test.txt
+notepad C:\CustomWindows\test.txt
+code C:\CustomWindows\test.txt
+
+Invoke-Item C:\CustomWindows\test.txt
+ii C:\CustomWindows\test.txt
 
 
 
