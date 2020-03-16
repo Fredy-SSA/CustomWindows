@@ -45,6 +45,20 @@ Get-Command get-*event*
 get-help Get-EventLog -Examples
 get-help Get-EventLog -ShowWindow
 Get-EventLog -LogName System -EntryType Error, warning
+#https://ss64.com/ps/syntax-datatypes.html
+
+#revenim la 13:45
+
+notepad
+
+Show-Command
+
+New-SmbShare -Name TestShare -Path C:\CustomWindows\test
+Get-SmbShare
+
+
+
+
 
 
 
