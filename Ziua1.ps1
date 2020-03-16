@@ -54,12 +54,25 @@ Get-Service  | where status -eq "Stopped"
 Get-Service | ? name -like "a*" | ? status -Like "st*" # filtrare simpla
 Get-Service | ? {$_.name -like "a*" -and $_.status -Like "st*" } "Filtrare avansata"
 
-Get-Process | 
+Get-Process | Get-Member
+Get-Process | select * -First 1
+
+(Get-Process notepad).Kill()
+
+(Get-Process).name
+
+Get-Process | ? name -like "notepad" | Stop-Process
  
 Get-Alias ?
 
+Get-Process | ? name -like "*"  | Stop-Process -WhatIf
 
+"test1 " > C:\CustomWindows\test1.txt
+"test2 " > C:\CustomWindows\test2.txt
+"test3 " > C:\CustomWindows\test3.txt
 
-
+notepad C:\CustomWindows\test1.txt
+notepad C:\CustomWindows\test2.txt
+notepad C:\CustomWindows\test3.txt
 
 
