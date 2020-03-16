@@ -84,3 +84,11 @@ Get-Process | ? name -like notepad | select *
 Get-Process | ? MainWindowTitle -eq "test2 - notepad"
 Get-Process | ? MainWindowTitle -like "test2*" | Stop-Process 
 
+
+Get-Command *csv*
+
+Get-Service | export-csv C:\CustomWindows\test\testcsv.csv -NoTypeInformation 
+ii C:\CustomWindows\test\testcsv.csv
+
+Get-Service  | select Status,Name,DisplayName | export-csv C:\CustomWindows\test\test2csv.csv -NoTypeInformation 
+ii C:\CustomWindows\test\test2csv.csv
