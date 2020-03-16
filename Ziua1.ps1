@@ -94,3 +94,6 @@ ii C:\CustomWindows\test\testcsv.csv
 
 Get-Service  | select Status,Name,DisplayName,StartType | export-csv C:\CustomWindows\test\test2csv.csv -NoTypeInformation 
 ii C:\CustomWindows\test\test2csv.csv
+
+$csv = import-csv C:\CustomWindows\test\test2csv.csv
+$csv
