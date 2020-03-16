@@ -87,8 +87,10 @@ Get-Process | ? MainWindowTitle -like "test2*" | Stop-Process
 
 Get-Command *csv*
 
+Get-Service | select * -First 1
+
 Get-Service | export-csv C:\CustomWindows\test\testcsv.csv -NoTypeInformation 
 ii C:\CustomWindows\test\testcsv.csv
 
-Get-Service  | select Status,Name,DisplayName | export-csv C:\CustomWindows\test\test2csv.csv -NoTypeInformation 
+Get-Service  | select Status,Name,DisplayName,StartType | export-csv C:\CustomWindows\test\test2csv.csv -NoTypeInformation 
 ii C:\CustomWindows\test\test2csv.csv
