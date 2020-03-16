@@ -12,4 +12,7 @@ git remote add origin https://github.com/Fredy-SSA/CustomWindows // add remote r
 git pull origin master // always pull from remote before pushing
 git push -u origin master // publish changes to your remote repository
 
-orice
+Pentru Useri
+
+git init
+git clone https://github.com/Fredy-SSA/CustomWindows
