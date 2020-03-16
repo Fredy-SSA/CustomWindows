@@ -41,7 +41,7 @@ gci
 ls
 dir
 
-Get-Module -ListAvailable  #FGHF
+Get-Module -ListAvailable  #FGHF 
 
 Save-Help C:\CustomWindows\test -Force
 Update-Help -LiteralPath C:\CustomWindows\test -Force

@@ -57,12 +57,47 @@ New-SmbShare -Name TestShare -Path C:\CustomWindows\test
 Get-SmbShare
 
 
+get-help about_*
+get-help about_*if*
+get-help about_*if* -ShowWindow
+
+#ctrl + j
+$X = "sdfsdf"
+$X 
+
+if ($x -le 10)
+{
+    "Nr $x este mai mic sau egal  cu 10 !"
+}
+elseif($x -le 20)
+{
+    "Nr $x este mai mic sau egal cu 20 !"
+}else {
+    "Habar nu am ce este $X !!"
+}
+
+Get-Command *path*
+help Test-Path -Examples 
 
 
+$path = "C:\CustomWindows\test"
+$testPath = Test-Path $path
+
+if ($testPath)
+{
+    "Directorul $path  exista !"
+}else {
+"Directorul $path nu exista !"
+
+}
+
+#https://scratch.mit.edu/
 
 
+get-help about_*
 
-
+get-help about_*oper*
+help about_Comparison_Operators -ShowWindow
 
 
 
