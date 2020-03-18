@@ -46,10 +46,20 @@ F - 1111
 16 bits  16 bits       ::                  :1
 
 Example
+Lon-Srv1
+fd00:aaaa:bbbb:cccc::1/116
+Lon-Srv2
+fd00:aaaa:bbbb:cccc::2/116
+Lon-DC1
+fd00:aaaa:bbbb:cccc::3/116
+
+
+Example2
 Srv1
-fd00:aaaa:bbbb:cccc::1
+fd00::1/116
 Srv2
-fd00:aaaa:bbbb:cccc::2
+fd00::2/116
+
 
 Loopback
 ipv4= 127.0.0.1
