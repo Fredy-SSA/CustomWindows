@@ -2,9 +2,7 @@
 ## Windows 2016  server Introduction
 ### Overview 
 - https://docs.microsoft.com/en-us/windows-server/
-
- - https://docs.microsoft.com/en-us/windows-server/get-started/system-requirements
-
+- https://docs.microsoft.com/en-us/windows-server/get-started/system-requirements
 - https://docs.microsoft.com/en-us/windows-server/get-started/whats-new-in-windows-server-2016
 
 
@@ -29,6 +27,7 @@
 - https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/create-a-virtual-switch-for-hyper-v-virtual-machines
 ### DHCP Role - Install Configure IPv4/IPv6
 - https://docs.microsoft.com/en-us/windows-server/networking/technologies/dhcp/dhcp-top
+- https://www.tactig.com/install-dhcp-server-on-windows-server/
 
 ## Introduction to storage for Windows Server 2016 
 ### RAID 
