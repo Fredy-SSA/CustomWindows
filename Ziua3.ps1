@@ -46,13 +46,10 @@ F - 1111
 16 bits  16 bits       ::                  :1
 
 Example
-Lon-Srv1
+Srv1
 fd00:aaaa:bbbb:cccc::1/116
-Lon-Srv2
+Srv2
 fd00:aaaa:bbbb:cccc::2/116
-Lon-DC1
-fd00:aaaa:bbbb:cccc::3/116
-
 
 Example2
 Srv1
@@ -81,7 +78,21 @@ Public_Class
 IPv6 = 2001 - 2003::
        2001:DB8:0:2D4C:1CC:DD:1122:1234
 
-
-
 #>
 
+#dnsCheck
+
+nslookup
+set type=all
+atos.net
+
+
+#DNS
+
+#edit DNS Host/PC
+notepad C:\Windows\System32\drivers\etc\hosts
+
+#Ad-DNS
+
+#PublicDNS
+nslookup 
