@@ -26,3 +26,25 @@ Set-NetIPInterface -InterfaceIndex 6 -Dhcp Enabled
 get-NetIPInterface
 Set-NetIPInterface -InterfaceAlias iptest -Dhcp Enabled
 
+
+#Powershell for Network
+Get-NetAdapter
+Restart-NetAdapter
+Get-NetIPInterface
+Get-NetIPAddress
+Get-NetRoute
+Get-NetConnectionProfile
+Get-DNSClientCache
+Get-DNSClientServerAddress
+Register-DnsClient
+Set-DnsClient
+Set-DnsClientGlobalSetting
+Set-DnsClientServerAddress
+Set‑NetIPAddress
+Set‑NetIPv4Protocol
+Set‑NetIPInterface
+Test-Connection
+Test-NetConnection
+Resolve-Dnsname
+
+
