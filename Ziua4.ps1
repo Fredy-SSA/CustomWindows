@@ -19,6 +19,9 @@ Add-IscsiVirtualDiskTargetMapping -targetname iscsi-target -path "Z:\virtualdisk
 mkdir c:\VM-Hosts\TM-VM1
 mkdir c:\VM-Hosts\TM-VM2
 
+
+#CreateNewVM
+
 #BaseVHD
 "C:\Program Files\Microsoft Learning\Base\Base17C-WS16-1607.vhd"
 
@@ -33,7 +36,18 @@ New-VM -Name TM-VM1 -MemoryStartupBytes 4096MB -VHDPath "c:\VM-Hosts\TM-VM1\tm-v
 New-VM -Name TM-VM2 -MemoryStartupBytes 4096MB -VHDPath "c:\VM-Hosts\TM-VM2\tm-vm2.vhd" -SwitchName "Private Network"
 
 
+$credential = Get-Credential
 
+Enter-PSSession -VMName TM-vm1  -Credential $credential
+
+Rename-Computer TM-VM1
+Restart-Computer
+exit
+
+Enter-PSSession -VMName TM-vm2  -Credential $credential
+Rename-Computer TM-VM1
+Restart-Computer
+exit
 
 
 
