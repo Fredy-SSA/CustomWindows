@@ -70,13 +70,22 @@ hostname
 
 get-help set-VMProcessor -ShowWindow
 
+#set nestedVM
 Set-VMProcessor -VMName  TM-vm1, TM-vm2 -ExposeVirtualizationExtensions $true
 Get-VMProcessor -VMName  TM-vm1, TM-vm2 | select vmname , ExposeVirtualizationExtensions
 
+#get info despre nested VM
 Get-VMProcessor | select vmname , ExposeVirtualizationExtensions
 
+#startvm
 Start-VM TM-VM1,TM-VM2
 
+
+Invoke-Command -VMName  TM-vm1, TM-vm2 -ScriptBlock  {
+
+Install-WindowsFeature Hyper-v -IncludeManagementTools -Restart
+
+} -Credential $credential
 
 
 
