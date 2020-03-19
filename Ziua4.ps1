@@ -59,6 +59,25 @@ hostname
 
 } -Credential $credential
 
+Invoke-Command -VMName  TM-vm1, TM-vm2 -ScriptBlock  {
+
+
+Get-NetFirewallProfile | select Name , enabled
+hostname
+
+} -Credential $credential
+
+
+get-help set-VMProcessor -ShowWindow
+
+Set-VMProcessor -VMName  TM-vm1, TM-vm2 -ExposeVirtualizationExtensions $true
+Get-VMProcessor -VMName  TM-vm1, TM-vm2 | select vmname , ExposeVirtualizationExtensions
+
+Get-VMProcessor | select vmname , ExposeVirtualizationExtensions
+
+Start-VM TM-VM1,TM-VM2
+
+
 
 
 
