@@ -51,7 +51,15 @@ Restart-Computer -Force
 
 
 
-Invoke-Command -VMName  TM-vm1, 
+Invoke-Command -VMName  TM-vm1, TM-vm2 -ScriptBlock  {
+
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+Get-NetFirewallProfile | select Name , enabled
+hostname
+
+} -Credential $credential
+
+
 
 
 
