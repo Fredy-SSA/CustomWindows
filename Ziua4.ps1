@@ -36,19 +36,22 @@ New-VM -Name TM-VM1 -MemoryStartupBytes 4096MB -VHDPath "c:\VM-Hosts\TM-VM1\tm-v
 New-VM -Name TM-VM2 -MemoryStartupBytes 4096MB -VHDPath "c:\VM-Hosts\TM-VM2\tm-vm2.vhd" -SwitchName "Private Network"
 
 
-$credential = Get-Credential
+$credential = Get-Credential #Administrator  si Parola
 
 Enter-PSSession -VMName TM-vm1  -Credential $credential
 
 Rename-Computer TM-VM1
-Restart-Computer
-exit
+Restart-Computer -Force
+#exit
 
 Enter-PSSession -VMName TM-vm2  -Credential $credential
-Rename-Computer TM-VM1
-Restart-Computer
-exit
+Rename-Computer TM-VM2
+Restart-Computer -Force
+#exit
 
+
+
+Invoke-Command -VMName  TM-vm1, 
 
 
 
