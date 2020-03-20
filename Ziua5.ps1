@@ -17,3 +17,10 @@ New-SMBShare –Name "Test Share" –Path "c:\testShare" –FullAccess Everyone
 
 #Creare DFSN root
 New-DfsnRoot -TargetPath "\\tm-vm1\Test Share" -Type DomainV2 -Path "\\Adatum.com\Test Share"
+
+
+
+Get-Command  -Module DfsR
+#Creare Folder Replication
+Set-DfsReplicatedFolder -DfsnPath "\\Adatum\Contabilitate" -GroupName  "Contabilitate"
+
