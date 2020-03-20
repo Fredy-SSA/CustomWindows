@@ -75,18 +75,31 @@ Set-VMProcessor -VMName  TM-vm1, TM-vm2 -ExposeVirtualizationExtensions $true
 Get-VMProcessor -VMName  TM-vm1, TM-vm2 | select vmname , ExposeVirtualizationExtensions
 
 #get info despre nested VM
-Get-VMProcessor | select vmname , ExposeVirtualizationExtensions
+Get-VMProcessor * | select vmname , ExposeVirtualizationExtensions
 
 #startvm
 Start-VM TM-VM1,TM-VM2
 
-
+#install Hyper-V
 Invoke-Command -VMName  TM-vm1, TM-vm2 -ScriptBlock  {
 
-Install-WindowsFeature Hyper-v -IncludeManagementTools -Restart
+#Install-WindowsFeature Hyper-v -IncludeManagementTools -Restart
+add-windowsfeature rsat-hyper-v-tools
 
 } -Credential $credential
 
+Invoke-Command -VMName  TM-vm1, TM-vm2 -ScriptBlock  {
+
+Get-WindowsFeature
+
+} -Credential $credential
+
+
+Invoke-Command -VMName  TM-vm1, TM-vm2 -ScriptBlock  {
+
+Enable-PSRemoting -Force
+
+} -Credential $credential
 
 
 
